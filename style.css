@@ -107,10 +107,19 @@ body {
   font-size: 0.9rem;
 }
 
-/* CONTACT */
 .contact p {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   font-size: 1rem;
+}
+
+.contact a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
 
 /* FOOTER */
