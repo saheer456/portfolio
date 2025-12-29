@@ -1,158 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saheer Khan | Web Developer</title>
+  <meta name="description"
+    content="Saheer Khan – Web Developer and Full Stack Intern building clean, responsive, production-ready websites.">
 
-  <!-- SEO -->
-  <meta name="description" content="Saheer Khan – Web Developer and Full Stack Intern building clean, responsive, production-ready websites." />
-
-  <!-- Fonts (required for your CSS) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon (Placeholder) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>SK</text></svg>">
 </head>
+
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Saheer Khan</h1>
-      <p class="role">Web Developer • Full Stack Intern</p>
-      <p class="tagline">
-        I build clean, responsive, and production-ready websites.
-      </p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">SK<span class="dot">.</span></a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link btn-contact">Contact Me</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
   <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <p class="hero-subtitle reveal">Hello, I'm</p>
+        <h1 class="hero-title reveal-delay-1">Saheer Khan</h1>
+        <h2 class="hero-role reveal-delay-2">Full Stack Web Developer</h2>
+        <p class="hero-desc reveal-delay-3">
+          I build clean, responsive, and production-ready websites with a focus on premium aesthetics and user
+          experience.
+        </p>
+        <div class="hero-cta reveal-delay-4">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
 
-    <!-- PROJECTS -->
-    <section class="section">
-      <h2>Projects</h2>
-
-      <div class="projects-grid">
-
-       <article class="card">
-  <h3>Carevia Foundation</h3>
-  <p class="sub">Full Stack Developer · NGO (Section 8)</p>
-
-  <p>
-    Worked as a Full Stack Developer at Carevia Foundation, a registered
-    Section 8 NGO focused on empowering women, advancing education, and
-    improving access to healthcare. Contributed to building and maintaining
-    a production-ready web platform that supports the foundation’s social
-    impact initiatives.
-  </p>
-
-  <p>
-    Responsible for developing responsive user interfaces, implementing
-    backend logic, and improving overall website performance and usability
-    to support real-world users and beneficiaries.
-  </p>
-
-  <p class="tech">HTML • CSS • JavaScript • Full Stack Development</p>
-
-  <a href="https://www.carevia.net/" target="_blank" rel="noopener noreferrer">
-    Visit Website →
-  </a>
-</article>
-
-
-        <article class="card">
-          <h3>Bakersyde</h3>
-          <p class="sub">Home Bakery Website</p>
-          <p>
-            Designed and developed a responsive website for a home bakery to showcase products
-            and contact information with a clean layout.
-          </p>
-          <p class="tech">HTML • CSS • JavaScript</p>
-          <a href="https://saheer456.github.io/bakersyde/" target="_blank" rel="noopener noreferrer">
-            View Website →
-          </a>
-        </article>
-
+      <div class="scroll-down">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section alt">
-      <h2>Internship</h2>
-      <article class="card">
-        <h3>Full Stack Web Developer Intern</h3>
-        <p class="sub">Connect For</p>
-        <ul>
-          <li>Worked on a real production website (Carevia)</li>
-          <li>Built and improved front-end components using HTML, CSS, and JavaScript</li>
-          <li>Assisted with backend logic, debugging, and testing</li>
-          <li>Collaborated in a team-based development environment</li>
-        </ul>
-      </article>
-    </section>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="line"></div>
+        </div>
 
-    <!-- SKILLS -->
-    <section class="section">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>Responsive Design</span>
-        <span>Basic SQL</span>
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <p>
+              I am a passionate Web Developer and Full Stack Intern based in Kozhikode, Kerala.
+              My journey is defined by a relentless pursuit of creating digital experiences that are not only functional
+              but also visually stunning.
+            </p>
+            <p>
+              With a strong foundation in <span class="highlight">HTML, CSS, and JavaScript</span>, and experience
+              working on production-level projects like the <strong>Carevia Foundation</strong> platform, I bring a
+              blend of technical capability and creative design thinking to every project.
+            </p>
+            <div class="stats-row">
+              <div class="stat-item">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Years Learning</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section alt">
-      <h2>Contact</h2>
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <div class="line"></div>
+        </div>
 
-      <div class="contact">
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:khansaheer424@gmail.com">khansaheer424@gmail.com</a>
-        </p>
+        <div class="timeline">
+          <!-- Timeline Item 1: UV Sign -->
+          <div class="timeline-item reveal-bottom">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 - Present</div>
+            <div class="timeline-content">
+              <h3>Freelance Web Developer</h3>
+              <h4>UV Sign</h4>
+              <p class="timeline-desc">
+                Designed and developed a premium business website for a UV printing company.
+              </p>
+              <ul class="timeline-list">
+                <li>Built a mobile-first, high-performance website from scratch.</li>
+                <li>Implemented advanced SEO strategies to improve local search visibility.</li>
+                <li>Created a modern, high-contrast UI to showcase printing services.</li>
+              </ul>
+              <div class="tags">
+                <span>Freelance</span>
+                <span>Frontend</span>
+                <span>SEO</span>
+              </div>
+            </div>
+          </div>
 
-        <p>
-          <strong>Phone:</strong>
-          <a href="tel:+919778550480">+91 97785 50480</a>
-        </p>
-
-        <p>
-          <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/saheer-khan-900b9a26a"
-             target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/saheer-khan-900b9a26a
-          </a>
-        </p>
-
-        <p>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/saheer456"
-             target="_blank" rel="noopener noreferrer">
-            github.com/saheer456
-          </a>
-        </p>
+          <!-- Timeline Item 2: Connect For -->
+          <div class="timeline-item reveal-bottom">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023 - 2024</div>
+            <div class="timeline-content">
+              <h3>Full Stack Web Developer Intern</h3>
+              <h4>Connect For</h4>
+              <p class="timeline-desc">
+                Contributed to the development of the Carevia Foundation platform.
+              </p>
+              <ul class="timeline-list">
+                <li>Worked on a real production website (Carevia).</li>
+                <li>Built and improved front-end components using HTML, CSS, and JavaScript.</li>
+                <li>Assisted with backend logic, debugging, and testing.</li>
+                <li>Collaborated in a team-based development environment.</li>
+              </ul>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                <span>Debugging</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project New: UV Sign -->
+          <article class="project-card reveal-bottom">
+            <div class="project-image">
+              <!-- Placeholder for project image -->
+              <div class="img-placeholder gradient-3">
+                <i class="fa-solid fa-paintbrush"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-top">
+                <h3>UV Sign</h3>
+                <p class="project-type">Client Project / Business Website</p>
+              </div>
+              <p class="project-desc">
+                A premium, mobile-first website for a professional UV printing and signage company. Designed to generate
+                leads and showcase services with a modern, high-contrast aesthetic.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Responsive</span>
+                <span>SEO</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.uvsign.in/" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 1 -->
+          <article class="project-card reveal-bottom delay-1">
+            <div class="project-image">
+              <!-- Placeholder for project image -->
+              <div class="img-placeholder gradient-1">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-top">
+                <h3>Carevia Foundation</h3>
+                <p class="project-type">NGO Platform</p>
+              </div>
+              <p class="project-desc">
+                A production-ready web platform for a Section 8 NGO focused on empowering women and improving healthcare
+                access. Developed responsive UIs and implemented backend logic.
+              </p>
+              <div class="project-tech">
+                <span>Full Stack</span>
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.carevia.net/" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal-bottom delay-1">
+            <div class="project-image">
+              <!-- Placeholder for project image -->
+              <div class="img-placeholder gradient-2">
+                <i class="fa-solid fa-bread-slice"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-top">
+                <h3>Bakersyde</h3>
+                <p class="project-type">E-commerce / Portfolio</p>
+              </div>
+              <p class="project-desc">
+                A responsive website for a home bakery showcasing products and contact information with a clean,
+                appetizing layout.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://saheer456.github.io/bakersyde/" target="_blank" rel="noopener noreferrer"
+                  class="link-btn">
+                  <i class="fa-solid fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="line"></div>
+        </div>
+
+        <div class="skills-wrapper reveal-bottom">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools & Others</h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="skill-tag"><i class="fa-solid fa-database"></i> Basic SQL</span>
+              <span class="skill-tag"><i class="fa-solid fa-code"></i> VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-wrapper reveal-bottom">
+          <div class="contact-header">
+            <h2>Let's Work Together</h2>
+            <p>Have a project in mind or want to discuss a new opportunity?</p>
+          </div>
+
+          <div class="contact-cards">
+            <a href="mailto:khansaheer424@gmail.com" class="contact-card">
+              <div class="icon-box">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <h3>Email</h3>
+              <p>khansaheer424@gmail.com</p>
+            </a>
+
+            <a href="tel:+919778550480" class="contact-card">
+              <div class="icon-box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <h3>Phone</h3>
+              <p>+91 97785 50480</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/saheer-khan-900b9a26a" target="_blank" rel="noopener noreferrer"
+              class="contact-card">
+              <div class="icon-box">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <h3>LinkedIn</h3>
+              <p>Connect with me</p>
+            </a>
+
+            <a href="https://github.com/saheer456" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="icon-box">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <h3>GitHub</h3>
+              <p>Check my code</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© <span id="year"></span> Saheer Khan</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">SK<span class="dot">.</span></div>
+        <p>&copy; <span id="year"></span> Saheer Khan. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/saheer-khan-900b9a26a" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/saheer456" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:khansaheer424@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Small JS for year -->
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
+
 </html>
