@@ -18,6 +18,9 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 
@@ -50,16 +53,16 @@
   <main>
     <!-- Hero Section -->
     <section id="hero" class="hero">
-      <div class="hero-bg"></div>
+      <div id="particles-js" class="hero-bg"></div>
       <div class="container hero-content">
-        <p class="hero-subtitle reveal">Hello, I'm</p>
-        <h1 class="hero-title reveal-delay-1">Saheer Khan</h1>
-        <h2 class="hero-role reveal-delay-2">Full Stack Web Developer</h2>
-        <p class="hero-desc reveal-delay-3">
+        <p class="hero-subtitle" data-aos="fade-down">Hello, I'm</p>
+        <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="200">Saheer Khan</h1>
+        <h2 class="hero-role" data-aos="fade-up" data-aos-delay="400"><span class="typing-text"></span></h2>
+        <p class="hero-desc" data-aos="fade-up" data-aos-delay="600">
           I build clean, responsive, and production-ready websites with a focus on premium aesthetics and user
           experience.
         </p>
-        <div class="hero-cta reveal-delay-4">
+        <div class="hero-cta" data-aos="fade-up" data-aos-delay="800">
           <a href="#projects" class="btn btn-primary">View Projects</a>
           <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
@@ -81,7 +84,7 @@
         </div>
 
         <div class="about-grid">
-          <div class="about-text reveal-left">
+          <div class="about-text" data-aos="fade-right">
             <p>
               I am a passionate Web Developer and Full Stack Intern based in Kozhikode, Kerala.
               My journey is defined by a relentless pursuit of creating digital experiences that are not only functional
@@ -93,11 +96,11 @@
               blend of technical capability and creative design thinking to every project.
             </p>
             <div class="stats-row">
-              <div class="stat-item">
+              <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
                 <span class="stat-number">2+</span>
                 <span class="stat-label">Years Learning</span>
               </div>
-              <div class="stat-item">
+              <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
                 <span class="stat-number">5+</span>
                 <span class="stat-label">Projects Completed</span>
               </div>
@@ -117,10 +120,11 @@
 
         <div class="timeline">
           <!-- Timeline Item 1: UV Sign -->
-          <div class="timeline-item reveal-bottom">
+          <div class="timeline-item" data-aos="fade-left">
             <div class="timeline-dot"></div>
             <div class="timeline-date">2024 - Present</div>
-            <div class="timeline-content">
+            <div class="timeline-content" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.2">
               <h3>Freelance Web Developer</h3>
               <h4>UV Sign</h4>
               <p class="timeline-desc">
@@ -140,10 +144,11 @@
           </div>
 
           <!-- Timeline Item 2: Connect For -->
-          <div class="timeline-item reveal-bottom">
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
             <div class="timeline-dot"></div>
             <div class="timeline-date">2023 - 2024</div>
-            <div class="timeline-content">
+            <div class="timeline-content" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare
+              data-tilt-max-glare="0.2">
               <h3>Full Stack Web Developer Intern</h3>
               <h4>Connect For</h4>
               <p class="timeline-desc">
@@ -177,7 +182,8 @@
 
         <div class="projects-grid">
           <!-- Project New: UV Sign -->
-          <article class="project-card reveal-bottom">
+          <article class="project-card" data-aos="fade-up" data-tilt data-tilt-max="10" data-tilt-speed="400"
+            data-tilt-glare data-tilt-max-glare="0.3">
             <div class="project-image">
               <!-- Placeholder for project image -->
               <div class="img-placeholder gradient-3">
@@ -208,7 +214,8 @@
           </article>
 
           <!-- Project 1 -->
-          <article class="project-card reveal-bottom delay-1">
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="10"
+            data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
             <div class="project-image">
               <!-- Placeholder for project image -->
               <div class="img-placeholder gradient-1">
@@ -238,7 +245,8 @@
           </article>
 
           <!-- Project 2 -->
-          <article class="project-card reveal-bottom delay-1">
+          <article class="project-card" data-aos="fade-up" data-aos-delay="400" data-tilt data-tilt-max="10"
+            data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
             <div class="project-image">
               <!-- Placeholder for project image -->
               <div class="img-placeholder gradient-2">
@@ -279,8 +287,8 @@
           <div class="line"></div>
         </div>
 
-        <div class="skills-wrapper reveal-bottom">
-          <div class="skill-category">
+        <div class="skills-wrapper">
+          <div class="skill-category" data-aos="fade-right">
             <h3>Frontend Development</h3>
             <div class="skill-tags">
               <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
@@ -290,7 +298,7 @@
             </div>
           </div>
 
-          <div class="skill-category">
+          <div class="skill-category" data-aos="fade-left" data-aos-delay="200">
             <h3>Tools & Others</h3>
             <div class="skill-tags">
               <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
@@ -338,7 +346,8 @@
               <p>Connect with me</p>
             </a>
 
-            <a href="https://github.com/saheer456" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <a href="https://github.com/saheer456" target="_blank" rel="noopener noreferrer" class="contact-card"
+              data-aos="zoom-in" data-aos-delay="300">
               <div class="icon-box">
                 <i class="fa-brands fa-github"></i>
               </div>
@@ -368,6 +377,15 @@
   </footer>
 
   <!-- Scripts -->
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Vanilla Tilt -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
   <script src="script.js"></script>
 </body>
 
