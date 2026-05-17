@@ -1,0 +1,30 @@
+# OS
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.vs/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build
+dist/
+build/
+*.zip
+*.gz
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
