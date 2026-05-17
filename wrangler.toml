@@ -1,6 +1,0 @@
-name = "portfolio"
-compatibility_date = "2025-01-01"
-compatibility_flags = ["nodejs_compat"]
-
-[vars]
-NODE_VERSION = "22.16.0"
