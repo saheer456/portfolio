@@ -61,20 +61,20 @@ export default function Navbar() {
         </span>
       </button>
 
-      {open && (
-        <div
-          className="fixed inset-0 top-[70px] bg-black/60 z-30 md:hidden"
-          onClick={() => setOpen(false)}
-          aria-hidden="true"
-        />
-      )}
+      <div
+        className={`fixed inset-0 top-[70px] bg-black/60 z-30 md:hidden transition-opacity duration-300 ${
+          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setOpen(false)}
+        aria-hidden="true"
+      />
 
       <ul
-        className={`md:flex md:items-center md:gap-[34px] ${
+        className={`flex flex-col md:flex-row md:items-center gap-2 md:gap-[34px] fixed md:static top-[70px] md:top-auto left-0 md:left-auto w-full md:w-auto bg-black/97 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none border-t md:border-none border-white/[.07] p-6 md:p-0 transition-all duration-300 ease-in-out z-40 ${
           open
-            ? "fixed top-[70px] left-0 w-full bg-black/97 backdrop-blur-lg border-t border-white/[.07] p-6 flex flex-col gap-2 z-40"
-            : "hidden"
-        } md:static md:bg-transparent md:border-none md:p-0 md:flex-row md:gap-[34px]`}
+            ? "opacity-100 translate-y-0 visible pointer-events-auto"
+            : "opacity-0 -translate-y-4 invisible pointer-events-none md:opacity-100 md:translate-y-0 md:visible md:pointer-events-auto"
+        }`}
       >
         {links.map((link) => (
           <li key={link.href}>
@@ -87,7 +87,7 @@ export default function Navbar() {
             </a>
           </li>
         ))}
-        <li className="mt-2">
+        <li className="mt-2 md:mt-0">
           <a
             href="#contact"
             className="inline-flex items-center justify-center w-full py-3 px-[22px] border border-gold text-gold text-sm md:text-xs tracking-[.08em] uppercase rounded-[3px] transition-all duration-300 hover:bg-gold hover:text-black"

@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden pt-[70px] px-6 md:px-12" aria-label="Hero introduction">
+    <section className="min-h-screen flex items-center relative overflow-hidden pt-[70px] px-5 sm:px-8 md:px-12" aria-label="Hero introduction">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -127,29 +127,29 @@ export default function Hero() {
               </div>
 
               <div className="text-[#8a8a8a] space-y-1.5 pt-1 border-t border-white/[.04]">
-                <div className="flex justify-between">
-                  <span className="text-[#5a5a5a]">status</span>
-                  <span className="text-green-400">active</span>
+                <div className="flex justify-between gap-4">
+                  <span className="text-[#5a5a5a] shrink-0">status</span>
+                  <span className="text-green-400 text-right">active</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-[#5a5a5a]">role</span>
-                  <span className="text-[#ede9e3]">AI Systems & Security Engineer</span>
+                <div className="flex justify-between gap-4">
+                  <span className="text-[#5a5a5a] shrink-0">role</span>
+                  <span className="text-[#ede9e3] text-right">AI Systems & Security Engineer</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-[#5a5a5a]">location</span>
-                  <span className="text-[#ede9e3]">Bangalore, India</span>
+                <div className="flex justify-between gap-4">
+                  <span className="text-[#5a5a5a] shrink-0">location</span>
+                  <span className="text-[#ede9e3] text-right">Bangalore, India</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-[#5a5a5a]">experience</span>
-                  <span className="text-[#ede9e3]">3+ years</span>
+                <div className="flex justify-between gap-4">
+                  <span className="text-[#5a5a5a] shrink-0">experience</span>
+                  <span className="text-[#ede9e3] text-right">3+ years</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-[#5a5a5a]">projects</span>
-                  <span className="text-[#ede9e3]">8 shipped</span>
+                <div className="flex justify-between gap-4">
+                  <span className="text-[#5a5a5a] shrink-0">projects</span>
+                  <span className="text-[#ede9e3] text-right">8 shipped</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-[#5a5a5a]">availability</span>
-                  <span className="text-yellow-400">open to work</span>
+                <div className="flex justify-between gap-4">
+                  <span className="text-[#5a5a5a] shrink-0">availability</span>
+                  <span className="text-yellow-400 text-right">open to work</span>
                 </div>
               </div>
 

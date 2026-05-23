@@ -51,6 +51,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   metadataBase: new URL("https://saheerkhan.app/"),
+  alternates: {
+    canonical: "/",
+  },
 }
 
 export default function RootLayout({
@@ -68,7 +71,6 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
-        <link rel="canonical" href="https://saheerkhan.app/" />
         <meta name="theme-color" content="#070707" />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>

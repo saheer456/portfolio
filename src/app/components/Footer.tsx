@@ -2,7 +2,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="py-8 px-6 md:px-12 border-t border-white/[.07] flex flex-col md:flex-row items-center justify-between gap-4 text-center">
+    <footer className="py-8 px-5 sm:px-8 md:px-12 border-t border-white/[.07] flex flex-col md:flex-row items-center justify-between gap-4 text-center">
       <div className="font-display text-xl font-extrabold">
         SK<span className="text-gold">.</span>
       </div>

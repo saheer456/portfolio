@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal"
 
 export default function GitHubActivity() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-12 bg-[#0d0d0d]" id="github" aria-label="GitHub activity">
+    <section className="py-24 md:py-32 px-5 sm:px-8 md:px-12 bg-[#0d0d0d]" id="github" aria-label="GitHub activity">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="eyebrow">Open Source</div>

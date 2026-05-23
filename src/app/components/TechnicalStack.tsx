@@ -12,7 +12,7 @@ const iconMap: Record<string, string> = {
 
 export default function TechnicalStack() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-12 bg-[#0d0d0d]" id="stack" aria-label="Technical stack">
+    <section className="py-24 md:py-32 px-5 sm:px-8 md:px-12 bg-[#0d0d0d]" id="stack" aria-label="Technical stack">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="eyebrow">Expertise</div>
@@ -22,7 +22,7 @@ export default function TechnicalStack() {
         <div className="grid sm:grid-cols-2 gap-5 mt-12">
           {skillCategories.map((cat, i) => (
             <ScrollReveal key={cat.title} delay={0.08 * i}>
-              <div className="bg-white/[.035] border border-white/[.07] rounded-xl p-8 transition-all duration-300 hover:border-gold/20">
+              <div className="bg-white/[.035] border border-white/[.07] rounded-xl p-5 sm:p-8 transition-all duration-300 hover:border-gold/20">
                 <h3 className="font-display text-xs tracking-[.07em] uppercase text-gold flex items-center gap-2.5 mb-5">
                   <i className={`${iconMap[cat.icon] || iconMap["fa-brain"]} text-sm`} />
                   {cat.title}

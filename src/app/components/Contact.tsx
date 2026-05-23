@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal"
 
 export default function Contact() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-12" id="contact" aria-label="Contact">
+    <section className="py-24 md:py-32 px-5 sm:px-8 md:px-12" id="contact" aria-label="Contact">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="text-center max-w-2xl mx-auto">
