@@ -92,8 +92,7 @@ export default function Hero() {
               GitHub
             </a>
             <a
-              href="/resume.pdf"
-              download
+              href="/resume"
               className="flex-1 sm:flex-none inline-flex items-center justify-center px-4 sm:px-6 py-3 sm:py-3 min-h-[48px] border border-white/[.14] text-[#8a8a8a] text-sm rounded-[4px] transition-all duration-300 hover:border-gold hover:text-gold hover:-translate-y-[3px]"
             >
               Resume
