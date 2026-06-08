@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden pt-[70px] px-5 sm:px-8 md:px-12" aria-label="Hero introduction">
+    <section className="min-h-screen flex items-center relative overflow-hidden pt-[70px] px-4 sm:px-6 md:px-12" aria-label="Hero introduction">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -16,7 +16,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-20 items-start">
+      <div className="relative z-10 w-full max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
         {/* Left: Identity */}
         <div>
           <motion.div
@@ -72,14 +72,14 @@ export default function Hero() {
           </motion.div>
 
           <motion.div
-            className="flex flex-wrap gap-3"
+            className="flex flex-wrap gap-2 sm:gap-3"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5, ease: [0.23, 1, 0.32, 1] }}
           >
             <a
               href="#projects"
-              className="inline-flex items-center px-6 py-3 bg-gold text-black font-display font-bold text-sm rounded-[4px] transition-all duration-400 hover:-translate-y-[3px] hover:shadow-[0_16px_32px_rgba(200,164,74,.3)]"
+              className="flex-1 sm:flex-none inline-flex items-center justify-center px-4 sm:px-6 py-3 sm:py-3 min-h-[48px] bg-gold text-black font-display font-bold text-sm rounded-[4px] transition-all duration-400 hover:-translate-y-[3px] hover:shadow-[0_16px_32px_rgba(200,164,74,.3)]"
             >
               View Projects
             </a>
@@ -87,13 +87,13 @@ export default function Hero() {
               href="https://github.com/saheer456"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 border border-white/[.14] text-[#8a8a8a] text-sm rounded-[4px] transition-all duration-300 hover:border-gold hover:text-gold hover:-translate-y-[3px]"
+              className="flex-1 sm:flex-none inline-flex items-center justify-center px-4 sm:px-6 py-3 sm:py-3 min-h-[48px] border border-white/[.14] text-[#8a8a8a] text-sm rounded-[4px] transition-all duration-300 hover:border-gold hover:text-gold hover:-translate-y-[3px]"
             >
               GitHub
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center px-6 py-3 border border-white/[.14] text-[#8a8a8a] text-sm rounded-[4px] transition-all duration-300 hover:border-gold hover:text-gold hover:-translate-y-[3px]"
+              className="flex-1 sm:flex-none inline-flex items-center justify-center px-4 sm:px-6 py-3 sm:py-3 min-h-[48px] border border-white/[.14] text-[#8a8a8a] text-sm rounded-[4px] transition-all duration-300 hover:border-gold hover:text-gold hover:-translate-y-[3px]"
             >
               Resume
             </a>
@@ -101,7 +101,7 @@ export default function Hero() {
         </div>
 
         {/* Right: Terminal-style Engineering Card */}
-        <div className="block">
+        <div className="hidden lg:block">
           <motion.div
             className="bg-white/[.035] border border-white/[.07] rounded-xl overflow-hidden font-mono text-sm"
             initial={{ opacity: 0, y: 40 }}

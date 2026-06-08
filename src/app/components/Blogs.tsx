@@ -6,7 +6,7 @@ import { blogPosts } from "@/app/data/blogs"
 
 export default function Blogs() {
   return (
-    <section className="py-24 md:py-32 px-5 sm:px-8 md:px-12" id="blogs" aria-label="Technical writing">
+    <section className="py-20 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12" id="blogs" aria-label="Technical writing">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="eyebrow">Writing</div>

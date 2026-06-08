@@ -37,25 +37,25 @@ export default function Navbar() {
   </Link>
 
       <button
-        className="flex items-center justify-center w-11 h-11 cursor-pointer md:hidden bg-transparent border-none rounded-lg"
+        className="flex items-center justify-center w-12 h-12 cursor-pointer md:hidden bg-transparent border-none rounded-lg hover:bg-white/[.05] transition-colors"
         onClick={() => setOpen(!open)}
         aria-label="Toggle navigation menu"
         aria-expanded={open}
       >
-        <span className="flex flex-col gap-[5px]">
+        <span className="flex flex-col gap-1.5">
           <span
-            className={`block w-[22px] h-[2px] bg-[#ede9e3] rounded-[2px] transition-all duration-300 ${
-              open ? "rotate-45 translate-y-[5px] translate-x-[5px]" : ""
+            className={`block w-6 h-0.5 bg-[#ede9e3] rounded transition-all duration-300 ${
+              open ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`block w-[22px] h-[2px] bg-[#ede9e3] rounded-[2px] transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-[#ede9e3] rounded transition-all duration-300 ${
               open ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`block w-[22px] h-[2px] bg-[#ede9e3] rounded-[2px] transition-all duration-300 ${
-              open ? "-rotate-45 translate-y-[-5px] translate-x-[5px]" : ""
+            className={`block w-6 h-0.5 bg-[#ede9e3] rounded transition-all duration-300 ${
+              open ? "-rotate-45 -translate-y-2" : ""
             }`}
           />
         </span>
@@ -80,17 +80,17 @@ export default function Navbar() {
           <li key={link.href}>
             <a
               href={link.href}
-              className="block w-full py-3 text-sm md:text-xs tracking-[.08em] uppercase text-[#5a5a5a] transition-colors duration-300 hover:text-[#ede9e3] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-400 hover:after:w-full"
+              className="block w-full py-3.5 md:py-2 text-sm md:text-xs tracking-[.08em] uppercase text-[#5a5a5a] transition-colors duration-300 hover:text-[#ede9e3] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-gold after:transition-all after:duration-400 hover:after:w-full"
               onClick={() => setOpen(false)}
             >
               {link.label}
             </a>
           </li>
         ))}
-        <li className="mt-2 md:mt-0">
+        <li className="mt-4 md:mt-0">
           <a
             href="#contact"
-            className="inline-flex items-center justify-center w-full py-3 px-[22px] border border-gold text-gold text-sm md:text-xs tracking-[.08em] uppercase rounded-[3px] transition-all duration-300 hover:bg-gold hover:text-black"
+            className="block py-3.5 md:py-3 px-6 md:px-5 border border-gold text-gold text-sm md:text-xs tracking-[.08em] uppercase rounded-[3px] transition-all duration-300 hover:bg-gold hover:text-black text-center"
             onClick={() => setOpen(false)}
           >
             Contact

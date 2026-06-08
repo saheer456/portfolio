@@ -12,7 +12,7 @@ const iconMap: Record<string, string> = {
 
 export default function TechnicalStack() {
   return (
-    <section className="py-24 md:py-32 px-5 sm:px-8 md:px-12 bg-[#0d0d0d]" id="stack" aria-label="Technical stack">
+    <section className="py-20 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12 bg-[#0d0d0d]" id="stack" aria-label="Technical stack">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="eyebrow">Expertise</div>

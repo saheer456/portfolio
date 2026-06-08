@@ -5,7 +5,7 @@ import { otherProjects } from "@/app/data/projects"
 
 export default function EngineeringProjects() {
   return (
-    <section className="py-24 md:py-32 px-5 sm:px-8 md:px-12" aria-label="Engineering projects">
+    <section className="py-20 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12" aria-label="Engineering projects">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="eyebrow">Projects</div>
