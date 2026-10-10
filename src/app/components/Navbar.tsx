@@ -6,8 +6,9 @@ import Link from "next/link"
 const links = [
   { href: "#projects", label: "Projects" },
   { href: "#stack", label: "Stack" },
+  { href: "#security", label: "Security" },
   { href: "#timeline", label: "Journey" },
-  { href: "#blogs", label: "Blogs" },
+  { href: "#blogs", label: "Writing" },
 ]
 
 export default function Navbar() {

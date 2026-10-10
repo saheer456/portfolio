@@ -19,9 +19,9 @@ export default function Home() {
         <FlagshipProject />
         <EngineeringProjects />
         <TechnicalStack />
+        <CybersecurityLabs />
         <GitHubActivity />
         <Blogs />
-        <CybersecurityLabs />
         <EngineeringTimeline />
         <Contact />
       </main>

@@ -26,7 +26,7 @@ export default function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-white/[.14] rounded-full text-[0.6rem] sm:text-[0.65rem] tracking-[.12em] uppercase text-[#8a8a8a] mb-8">
               <span className="w-[7px] h-[7px] bg-gold rounded-full animate-pulse" />
-              AI Systems & Cybersecurity
+              SOC · Blue Team · Security Operations
             </div>
           </motion.div>
 
@@ -46,9 +46,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.23, 1, 0.32, 1] }}
           >
-            <span className="text-[#ede9e3] font-medium">AI Systems & Cybersecurity Engineer</span>
+            <span className="text-[#ede9e3] font-medium">Aspiring SOC Analyst · Blue Team</span>
             <br />
-            Building autonomous AI agents, security tools, and scalable cloud-native applications.
+            Building SIEM labs, security tools, CTF challenges, and practicing incident investigation & detection engineering.
           </motion.p>
 
           <motion.div
@@ -58,16 +58,16 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4, ease: [0.23, 1, 0.32, 1] }}
           >
             <div className="flex items-center gap-2">
-              <span className="text-gold">▸</span> AI infrastructure
+              <span className="text-gold">▸</span> Security monitoring & SIEM
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-gold">▸</span> Security automation
+              <span className="text-gold">▸</span> Incident investigation
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-gold">▸</span> Cloud security
+              <span className="text-gold">▸</span> Detection engineering
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-gold">▸</span> Intelligent systems
+              <span className="text-gold">▸</span> Web & API security testing
             </div>
           </motion.div>
 
@@ -133,7 +133,7 @@ export default function Hero() {
                 </div>
                 <div className="flex justify-between gap-4">
                   <span className="text-[#5a5a5a] shrink-0">role</span>
-                  <span className="text-[#ede9e3] text-right">AI Systems & Security Engineer</span>
+                  <span className="text-[#ede9e3] text-right">SOC Analyst L1 · Blue Team</span>
                 </div>
                 <div className="flex justify-between gap-4">
                   <span className="text-[#5a5a5a] shrink-0">location</span>

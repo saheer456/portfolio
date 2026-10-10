@@ -25,18 +25,18 @@ export const timeline: TimelineEntry[] = [
   },
   {
     year: "2025",
-    title: "Built FRIDAY AI System",
-    subtitle: "AI Engineering",
+    title: "Built FRIDAY AI & Security Tools",
+    subtitle: "AI Engineering & Cybersecurity",
     description:
-      "Designed and built a multi-agent AI assistant with semantic memory, RAG, tool orchestration, and provider routing. Integrated LLM-powered reasoning with local vector retrieval and cloud deployment.",
-    tags: ["AI/LLM", "RAG", "Python", "TypeScript"],
+      "Designed and built a multi-agent AI assistant (FRIDAY) with semantic memory, RAG, and tool orchestration. Began developing VulnScanner for web vulnerability assessment and started cybersecurity lab practice.",
+    tags: ["AI/LLM", "RAG", "Python", "VulnScanner"],
   },
   {
     year: "2026",
-    title: "Moving into AI Infrastructure & Cloud Security",
+    title: "Pivoting into SOC & Blue Team Security",
     subtitle: "Current Focus",
     description:
-      "Deepening expertise in AI infrastructure, cloud security, and autonomous systems. Building security tools, exploring SIEM/SOC concepts, and preparing for TryHackMe/HTB certifications.",
-    tags: ["AI Infrastructure", "Cloud Security", "Pentesting"],
+      "Building Wazuh SIEM home lab for security monitoring and detection engineering. Developing CTF challenges, practicing API security testing with crAPI, and working through TryHackMe and Hack The Box labs. Targeting SOC Analyst L1 roles.",
+    tags: ["SOC Analyst", "SIEM", "CTF", "Blue Team"],
   },
 ]

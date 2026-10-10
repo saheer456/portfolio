@@ -4,10 +4,10 @@ import ScrollReveal from "./ScrollReveal"
 import { skillCategories } from "@/app/data/skills"
 
 const iconMap: Record<string, string> = {
-  "fa-brain": "fa-solid fa-brain",
-  "fa-server": "fa-solid fa-server",
   "fa-shield-halved": "fa-solid fa-shield-halved",
-  "fa-cloud": "fa-solid fa-cloud",
+  "fa-bug": "fa-solid fa-bug",
+  "fa-crosshairs": "fa-solid fa-crosshairs",
+  "fa-server": "fa-solid fa-server",
 }
 
 export default function TechnicalStack() {

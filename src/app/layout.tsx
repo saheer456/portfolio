@@ -23,26 +23,28 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Saheer Khan — AI Systems & Cybersecurity Engineer",
+  title: "Saheer Khan — Aspiring SOC Analyst L1 · Blue Team",
   description:
-    "AI Systems & Cybersecurity Engineer building autonomous AI agents, security tools, and scalable cloud-native applications. Based in Bangalore, India.",
+    "Aspiring SOC Analyst focused on security monitoring, SIEM operations, endpoint telemetry, incident investigation, and Blue Team defense. Based in Bangalore, India.",
   keywords: [
     "Saheer Khan",
-    "AI engineer",
-    "cybersecurity engineer",
-    "AI systems",
-    "AI agent developer",
-    "Bangalore developer",
-    "full stack developer",
+    "SOC Analyst",
+    "Blue Team",
+    "Cybersecurity",
+    "Wazuh",
+    "SIEM",
+    "Incident Investigation",
+    "CTF",
+    "Vulnerability Assessment",
+    "Security Monitoring",
+    "Kali Linux",
     "Python",
-    "React",
-    "TypeScript",
   ],
   authors: [{ name: "Saheer Khan" }],
   openGraph: {
-    title: "Saheer Khan — AI Systems & Cybersecurity Engineer",
+    title: "Saheer Khan — Aspiring SOC Analyst L1 · Blue Team",
     description:
-      "Building autonomous AI agents, security tools, and scalable cloud-native applications.",
+      "Aspiring SOC Analyst focused on security monitoring, SIEM operations, endpoint telemetry, incident investigation, and Blue Team defense.",
     url: "https://saheerkhan.app/",
     siteName: "Saheer Khan",
     locale: "en_IN",
@@ -50,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Saheer Khan — AI Systems & Cybersecurity Engineer",
+    title: "Saheer Khan — Aspiring SOC Analyst L1 · Blue Team",
     description:
-      "Building autonomous AI agents, security tools, and scalable cloud-native applications.",
+      "Aspiring SOC Analyst focused on security monitoring, SIEM operations, endpoint telemetry, incident investigation, and Blue Team defense.",
   },
   robots: {
     index: true,

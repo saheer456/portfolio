@@ -32,33 +32,33 @@ export default function GitHubActivity() {
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               {
-                name: "FRIDAY-AI",
-                desc: "Multi-agent AI assistant with RAG memory and tool orchestration",
-                lang: "TypeScript",
-                stars: "12",
-              },
-              {
-                name: "VulnScanner",
-                desc: "Full-stack web vulnerability scanner with 13 scanning modules",
+                name: "ctf",
+                desc: "The Ringmaster's Ledger — hard (500 pts) web exploitation CTF challenge with JWT JWK injection, SSRF, and privilege escalation",
                 lang: "Python",
-                stars: "8",
+                stars: "Active",
               },
               {
-                name: "OpenArchitect-Studio",
-                desc: "Autonomous AI software engineer that runs locally in Docker",
+                name: "vuln_scanner",
+                desc: "Web application vulnerability scanner detecting SQL injection, reflected XSS, and missing security headers with risk scoring",
+                lang: "Python",
+                stars: "Active",
+              },
+              {
+                name: "friday-agent",
+                desc: "Autonomous multi-agent AI assistant with semantic memory, local vector RAG, and tool orchestration",
                 lang: "TypeScript",
-                stars: "6",
+                stars: "Featured",
               },
               {
                 name: "Zerologic",
-                desc: "Mobile-first Python learning platform with interactive code playground",
+                desc: "Mobile-first interactive Python learning platform with Monaco code editor and Supabase authentication",
                 lang: "TypeScript",
-                stars: "4",
+                stars: "Live",
               },
             ].map((repo, i) => (
               <ScrollReveal key={repo.name} delay={0.05 * i}>
                 <a
-                  href="https://github.com/saheer456"
+                  href={`https://github.com/saheer456/${repo.name}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block bg-white/[.035] border border-white/[.07] rounded-xl p-5 transition-all duration-300 hover:border-gold/20 hover:-translate-y-1 group"

@@ -21,6 +21,10 @@
   --color-bg: var(--bg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
