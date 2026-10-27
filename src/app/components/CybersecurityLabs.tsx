@@ -12,6 +12,9 @@ export default function CybersecurityLabs() {
           <p className="text-[#8a8a8a] mt-4 max-w-2xl leading-relaxed">
             Hands-on practice in Blue Team operations, centralized SIEM monitoring, web and API security testing, and reproducible CTF engineering.
           </p>
+          <p className="text-[#8a8a8a] mt-3 text-sm">
+            All security testing is performed only in authorized lab environments.
+          </p>
         </ScrollReveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
@@ -34,7 +37,7 @@ export default function CybersecurityLabs() {
                     "Endpoint agent onboarding & telemetry collection",
                     "Alert triage & log investigation workflows",
                     "Detection rule evaluation for failed logins & FIM",
-                    "Separating normal baseline from suspicious events",
+                    "SIEM concepts alongside Splunk (SPL) in the institutional lab",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-2 text-xs text-[#8a8a8a] leading-relaxed">
                       <span className="w-1.5 h-1.5 rounded-full bg-gold/70 mt-1.5 flex-shrink-0" />
@@ -44,14 +47,49 @@ export default function CybersecurityLabs() {
                 </div>
               </div>
               <div className="mt-5 pt-4 border-t border-white/[.05] flex items-center justify-between text-[0.65rem] text-[#5a5a5a]">
-                <span className="text-gold">Status: In Progress</span>
+                <span className="text-gold">Status: Lab in progress</span>
                 <span>Kali · Docker · Wazuh</span>
               </div>
             </div>
           </ScrollReveal>
 
-          {/* Card 2: API & Web Vulnerability Testing */}
+          {/* Card 2: Institutional SOC Lab - Splunk & Wazuh */}
           <ScrollReveal delay={0.14}>
+            <div className="bg-white/[.035] border border-white/[.07] rounded-xl p-6 h-full flex flex-col justify-between transition-all duration-300 hover:border-gold/30">
+              <div>
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 bg-gold-dim rounded-lg flex items-center justify-center text-gold text-lg">
+                    <i className="fa-solid fa-layer-group" />
+                  </div>
+                  <div>
+                    <h3 className="font-display text-sm font-bold">Institutional SOC Lab: Splunk & Wazuh</h3>
+                    <p className="text-[0.65rem] sm:text-[0.6rem] text-[#5a5a5a] uppercase tracking-[.1em]">Security Monitoring</p>
+                  </div>
+                </div>
+                <div className="space-y-2.5">
+                  {[
+                    "SPL searches and security log review",
+                    "Alert-investigation exercises",
+                    "Understanding escalation workflows",
+                    "Wazuh SIEM practice alongside Splunk",
+                    "Training-lab experience, not paid SOC employment",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-2 text-xs text-[#8a8a8a] leading-relaxed">
+                      <span className="w-1.5 h-1.5 rounded-full bg-gold/70 mt-1.5 flex-shrink-0" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="mt-5 pt-4 border-t border-white/[.05] flex items-center justify-between text-[0.65rem] text-[#5a5a5a]">
+                <span className="text-gold">Status: Completed exercises</span>
+                <span>Splunk · Wazuh</span>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* Card 3: API & Web Vulnerability Testing */}
+          <ScrollReveal delay={0.2}>
             <div className="bg-white/[.035] border border-white/[.07] rounded-xl p-6 h-full flex flex-col justify-between transition-all duration-300 hover:border-gold/30">
               <div>
                 <div className="flex items-center gap-3 mb-5">
@@ -85,8 +123,8 @@ export default function CybersecurityLabs() {
             </div>
           </ScrollReveal>
 
-          {/* Card 3: Reconnaissance & Assessment */}
-          <ScrollReveal delay={0.2}>
+          {/* Card 4: Reconnaissance & Assessment */}
+          <ScrollReveal delay={0.26}>
             <div className="bg-white/[.035] border border-white/[.07] rounded-xl p-6 h-full flex flex-col justify-between transition-all duration-300 hover:border-gold/30">
               <div>
                 <div className="flex items-center gap-3 mb-5">
@@ -120,8 +158,8 @@ export default function CybersecurityLabs() {
             </div>
           </ScrollReveal>
 
-          {/* Card 4: CTF Engineering */}
-          <ScrollReveal delay={0.26}>
+          {/* Card 5: CTF Engineering */}
+          <ScrollReveal delay={0.32}>
             <div className="bg-white/[.035] border border-white/[.07] rounded-xl p-6 h-full flex flex-col justify-between transition-all duration-300 hover:border-gold/30">
               <div>
                 <div className="flex items-center gap-3 mb-5">
@@ -162,8 +200,8 @@ export default function CybersecurityLabs() {
             </div>
           </ScrollReveal>
 
-          {/* Card 5: Labs & CTF Practice */}
-          <ScrollReveal delay={0.32}>
+          {/* Card 6: Labs & CTF Practice */}
+          <ScrollReveal delay={0.38}>
             <div className="bg-white/[.035] border border-white/[.07] rounded-xl p-6 h-full flex flex-col justify-between transition-all duration-300 hover:border-gold/30">
               <div>
                 <div className="flex items-center gap-3 mb-5">
@@ -177,10 +215,10 @@ export default function CybersecurityLabs() {
                 </div>
                 <div className="space-y-2.5">
                   {[
-                    "TryHackMe: Jr. Penetration Tester learning path",
-                    "TryHackMe: SOC Level 1 fundamentals",
-                    "Hack The Box: Active machines & privilege escalation",
-                    "PortSwigger Web Security Academy: Access control & SQLi",
+                    "TryHackMe: SOC Level 1 learning path (status TODO)",
+                    "TryHackMe: Jr. Penetration Tester learning path (status TODO)",
+                    "Hack The Box: Active machines & privilege escalation (status TODO)",
+                    "PortSwigger Web Security Academy: Access control & SQLi (status TODO)",
                     "Systematic note-taking & write-up documentation",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-2 text-xs text-[#8a8a8a] leading-relaxed">
@@ -197,8 +235,8 @@ export default function CybersecurityLabs() {
             </div>
           </ScrollReveal>
 
-          {/* Card 6: Certifications & Credentials */}
-          <ScrollReveal delay={0.38}>
+          {/* Card 7: Certifications & Credentials */}
+          <ScrollReveal delay={0.44}>
             <div className="bg-white/[.035] border border-white/[.07] rounded-xl p-6 h-full flex flex-col justify-between transition-all duration-300 hover:border-gold/30">
               <div>
                 <div className="flex items-center gap-3 mb-5">
@@ -206,23 +244,19 @@ export default function CybersecurityLabs() {
                     <i className="fa-solid fa-certificate" />
                   </div>
                   <div>
-                    <h3 className="font-display text-sm font-bold">Certifications & Credentials</h3>
-                    <p className="text-[0.65rem] sm:text-[0.6rem] text-[#5a5a5a] uppercase tracking-[.1em]">Verified Training</p>
+                    <h3 className="font-display text-sm font-bold">Training & Certifications</h3>
+                    <p className="text-[0.65rem] sm:text-[0.6rem] text-[#5a5a5a] uppercase tracking-[.1em]">Credentials (links TODO)</p>
                   </div>
                 </div>
                 <div className="space-y-2.5">
-                  {[
-                    "Ethical Hacking Starter — Offenso Elevate",
-                    "Cloud Computing — EC-Council",
-                    "Big Data & AI — IBM Career Education",
-                    "BCA Data Science — Undergraduate Degree",
-                  ].map((item) => (
-                    <div key={item} className="flex items-start gap-2 text-xs text-[#8a8a8a] leading-relaxed">
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold/70 mt-1.5 flex-shrink-0" />
-                      <span>{item}</span>
-                    </div>
-                  ))}
+                  <div className="flex items-start gap-2 text-xs text-[#8a8a8a] leading-relaxed">
+                    <span className="w-1.5 h-1.5 rounded-full bg-gold/70 mt-1.5 flex-shrink-0" />
+                    <span>None currently verified — add after confirming against your resume.</span>
+                  </div>
                 </div>
+                <p className="text-[0.6rem] text-[#5a5a5a] mt-4">
+                  Add completion status and credential links (Offenso, EC-Council, IBM) once verified.
+                </p>
               </div>
               <div className="mt-5 pt-4 border-t border-white/[.05] flex items-center justify-between text-[0.65rem] text-[#5a5a5a]">
                 <span className="text-gold">Credentials</span>

@@ -24,24 +24,37 @@ export default function ResumePage() {
             </Link>
 
             <h1 className="font-display text-4xl md:text-5xl font-extrabold mb-4">
-              Saheer Khan
+              Saheer Khan MK
             </h1>
             <p className="text-[#8a8a8a] text-lg mb-8">
-              SOC Analyst L1 | Cybersecurity Engineer
+              BCA (Data Science) · Aspiring SOC Analyst L1 · Security Operations
             </p>
 
-            {/* Download Button */}
-            <motion.a
-              href="/resume.docx"
-              download="Saheer_Khan_Resume.docx"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-6 py-3 min-h-[48px] bg-gold text-black font-display font-bold text-sm rounded-[4px] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(200,164,74,.3)]"
-            >
-              <i className="fa-solid fa-download" />
-              Download Resume (.docx)
-            </motion.a>
+            {/* Download Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <motion.a
+                href="/resume/Saheer-Khan-Resume.pdf"
+                download="Saheer-Khan-Resume.pdf"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="inline-flex items-center gap-2 px-6 py-3 min-h-[48px] bg-gold text-black font-display font-bold text-sm rounded-[4px] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(200,164,74,.3)]"
+              >
+                <i className="fa-solid fa-download" />
+                Download Resume (PDF)
+              </motion.a>
+              <motion.a
+                href="/resume.docx"
+                download="Saheer_Khan_Resume.docx"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="inline-flex items-center gap-2 px-6 py-3 min-h-[48px] border border-white/[.14] text-[#8a8a8a] font-display font-bold text-sm rounded-[4px] transition-all duration-300 hover:border-gold hover:text-gold hover:-translate-y-1"
+              >
+                <i className="fa-solid fa-download" />
+                Download Resume (.docx)
+              </motion.a>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -62,10 +75,10 @@ export default function ResumePage() {
                   Professional Summary
                 </h2>
                 <p className="leading-relaxed">
-                  Results-driven SOC Analyst with expertise in cybersecurity threat detection,
-                  incident response, and security infrastructure management. Proven ability to
-                  identify and mitigate security risks while maintaining operational efficiency.
-                  Specialized in SIEM tools, network security, and security automation.
+                  Cybersecurity-focused BCA (Data Science) graduate 2026 with hands-on training in security
+                  operations through lab practice and self-directed study. Skilled in security incident triage,
+                  log analysis, SIEM fundamentals (Wazuh, Splunk), and network threat detection. Eager to
+                  contribute to a SOC team performing alert monitoring, initial investigation, and escalation.
                 </p>
               </div>
 
@@ -144,7 +157,7 @@ export default function ResumePage() {
             Interested in working together?
           </h2>
           <p className="text-[#8a8a8a] mb-8">
-            Let's connect and discuss how I can contribute to your team's security initiatives.
+            Let&apos;s connect and discuss how I can contribute to your team&apos;s security initiatives.
           </p>
           <Link
             href="#contact"

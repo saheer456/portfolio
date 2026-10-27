@@ -12,31 +12,31 @@ export const timeline: TimelineEntry[] = [
     title: "Built first production website",
     subtitle: "Web Development",
     description:
-      "Started the journey by building my first production-ready website. Learned the fundamentals of HTML, CSS, JavaScript, and responsive design.",
+      "Built my first production website using HTML, CSS, and JavaScript with responsive design. [confirm this claim]",
     tags: ["HTML/CSS", "JavaScript", "Responsive"],
   },
   {
     year: "2024",
-    title: "Started Full Stack Internship",
-    subtitle: "Connect For · Carevia Foundation",
+    title: "Web development internship at Connectfor",
+    subtitle: "Web Development · 1 month",
     description:
-      "Contributed to both frontend and backend of a live production platform serving an NGO. Collaborated in a team environment with regular sprint cycles, building UI components and assisting with backend logic and deployment.",
-    tags: ["Full Stack", "Team Work", "Production"],
+      "Web development internship at Connectfor (one word). Dates and deliverables [confirm exact dates and what I personally built].",
+    tags: ["Connectfor", "Internship", "Web Development"],
   },
   {
     year: "2025",
-    title: "Built FRIDAY AI & Security Tools",
+    title: "Built FRIDAY and VulnScan; started cybersecurity lab practice",
     subtitle: "AI Engineering & Cybersecurity",
     description:
-      "Designed and built a multi-agent AI assistant (FRIDAY) with semantic memory, RAG, and tool orchestration. Began developing VulnScanner for web vulnerability assessment and started cybersecurity lab practice.",
-    tags: ["AI/LLM", "RAG", "Python", "VulnScanner"],
+      "Built FRIDAY (multi-agent AI assistant) and VulnScan (web vulnerability scanner). Began cybersecurity lab practice with Wazuh and web/API security testing.",
+    tags: ["AI/LLM", "Python", "VulnScan", "Cybersecurity Lab"],
   },
   {
     year: "2026",
-    title: "Pivoting into SOC & Blue Team Security",
+    title: "Targeting SOC Analyst L1 roles",
     subtitle: "Current Focus",
     description:
-      "Building Wazuh SIEM home lab for security monitoring and detection engineering. Developing CTF challenges, practicing API security testing with crAPI, and working through TryHackMe and Hack The Box labs. Targeting SOC Analyst L1 roles.",
-    tags: ["SOC Analyst", "SIEM", "CTF", "Blue Team"],
+      "Completed BCA (Data Science) at Acharya Institute of Graduate Studies, Bengaluru (graduation 2026). Offenso cybersecurity training (status/dates TODO). Wazuh home lab and institutional Splunk & Wazuh lab practice. Targeting SOC Analyst L1, Security Operations Associate, and Junior Security Analyst roles in India.",
+    tags: ["SOC Analyst", "SIEM", "Wazuh", "Splunk", "Blue Team"],
   },
 ]

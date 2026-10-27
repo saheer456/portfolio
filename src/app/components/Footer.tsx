@@ -7,7 +7,7 @@ export default function Footer() {
         SK<span className="text-gold">.</span>
       </div>
       <p className="text-xs text-[#5a5a5a]">
-        &copy; {year} Saheer Khan &nbsp;·&nbsp; Bangalore, India
+        &copy; {year} Saheer Khan &nbsp;·&nbsp; Kerala, India
       </p>
       <div className="flex items-center gap-3">
         {[

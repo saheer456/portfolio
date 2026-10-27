@@ -55,7 +55,7 @@ export default function FlagshipProject() {
 
               <p className="text-[#8a8a8a] leading-relaxed">
                 Building a local SIEM environment on Kali Linux to explore centralized security monitoring,
-                endpoint telemetry collection, alert investigation workflows, and detection engineering in an isolated Docker environment.
+                endpoint telemetry collection, alert investigation workflows, and detection rule analysis in an isolated Docker environment.
               </p>
 
               <div className="space-y-3">
@@ -102,9 +102,7 @@ export default function FlagshipProject() {
 
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/saheer456"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/projects/wazuh-siem-lab"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold text-black font-display font-bold text-sm rounded-[4px] transition-all duration-400 hover:-translate-y-[2px] hover:shadow-[0_12px_24px_rgba(200,164,74,.25)]"
                 >
                   View Case Study

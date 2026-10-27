@@ -1,8 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { otherProjects } from "@/app/data/projects"
 
 export default function Hero() {
+  const projectCount = 1 + otherProjects.length
   return (
     <section className="min-h-screen flex items-center relative overflow-hidden pt-[70px] px-4 sm:px-6 md:px-12" aria-label="Hero introduction">
       <div
@@ -48,7 +50,7 @@ export default function Hero() {
           >
             <span className="text-[#ede9e3] font-medium">Aspiring SOC Analyst · Blue Team</span>
             <br />
-            Building SIEM labs, security tools, CTF challenges, and practicing incident investigation & detection engineering.
+            Fresher seeking SOC Analyst L1 roles · Wazuh, Splunk, Burp Suite, Nmap · open to Bengaluru, Kochi and across India.
           </motion.p>
 
           <motion.div
@@ -63,9 +65,9 @@ export default function Hero() {
             <div className="flex items-center gap-2">
               <span className="text-gold">▸</span> Incident investigation
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-gold">▸</span> Detection engineering
-            </div>
+              <div className="flex items-center gap-2">
+                <span className="text-gold">▸</span> Detection rule analysis &amp; alert triage
+              </div>
             <div className="flex items-center gap-2">
               <span className="text-gold">▸</span> Web & API security testing
             </div>
@@ -137,15 +139,15 @@ export default function Hero() {
                 </div>
                 <div className="flex justify-between gap-4">
                   <span className="text-[#5a5a5a] shrink-0">location</span>
-                  <span className="text-[#ede9e3] text-right">Bangalore, India</span>
+                  <span className="text-[#ede9e3] text-right">Kerala, India · open to Bengaluru, Kochi</span>
                 </div>
                 <div className="flex justify-between gap-4">
                   <span className="text-[#5a5a5a] shrink-0">experience</span>
-                  <span className="text-[#ede9e3] text-right">3+ years</span>
+                  <span className="text-[#ede9e3] text-right">Fresher · hands-on labs</span>
                 </div>
                 <div className="flex justify-between gap-4">
                   <span className="text-[#5a5a5a] shrink-0">projects</span>
-                  <span className="text-[#ede9e3] text-right">8 shipped</span>
+                  <span className="text-[#ede9e3] text-right">{projectCount} labs &amp; builds</span>
                 </div>
                 <div className="flex justify-between gap-4">
                   <span className="text-[#5a5a5a] shrink-0">availability</span>

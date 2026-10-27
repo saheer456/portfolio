@@ -5,9 +5,71 @@ export interface BlogPost {
   date: string
   readTime: string
   content: string
+  tag: "Security" | "AI/Engineering"
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    title: "Web Vulnerability Scanning with Python",
+    slug: "web-vulnerability-scanning-python",
+    excerpt:
+      "Building a modular vulnerability scanner in Python — from crawlers and fingerprinting to SQL injection detection and report generation.",
+    date: "2026-02-20",
+    readTime: "12 min",
+    tag: "Security",
+    content: `
+<p>To understand web security, you have to learn how automated scanners work. I built <strong>VulnScanner</strong>, a modular vulnerability scanner in Python, to run penetration testing experiments on local labs. Here is a breakdown of how the scanner is architected.</p>
+
+<h3>Core Scanner Architecture</h3>
+<p>The scanner consists of a master orchestrator and five specialized detection modules:</p>
+<ol>
+  <li><strong>Crawler Module:</strong> Recursively maps all links, forms, and API endpoints using BeautifulSoup.</li>
+  <li><strong>Header Analyzer:</strong> Checks security headers (CORS, CSP, X-Frame-Options, HSTS).</li>
+  <li><strong>SQLi Scanner:</strong> Injects basic boolean-based and time-based SQL payloads into input forms.</li>
+  <li><strong>XSS Detection:</strong> Tests input validation by injecting HTML elements and monitoring reflecting inputs.</li>
+  <li><strong>Reporter:</strong> Compiles a structured markdown document detailing findings and risk severity.</li>
+</ol>
+
+<pre><code># Sample code snippet from the SQLi detection module
+def check_sqli(url, parameter):
+    payloads = ["'", "''", " OR 1=1", "' OR '1'='1"]
+    for payload in payloads:
+        target = f"{url}?{parameter}={payload}"
+        response = requests.get(target)
+        if "sql syntax" in response.text.lower() or "mysql" in response.text.lower():
+            return True
+    return False
+</code></pre>
+
+<p>This project taught me the importance of input validation, sanitized database queries (prepared statements), and the utility of automated testing tools in modern secure development pipelines.</p>
+    `
+  },
+  {
+    title: "My TryHackMe Workflow for CTF Challenges",
+    slug: "tryhackme-workflow-ctf",
+    excerpt:
+      "The methodology, tools, and mindset I use to systematically solve TryHackMe rooms and capture flags efficiently.",
+    date: "2026-02-05",
+    readTime: "6 min",
+    tag: "Security",
+    content: `
+<p>Capture The Flag (CTF) challenges on platforms like TryHackMe are brilliant for developing security instincts. However, randomly trying payloads without a clear methodology is a recipe for frustration. Over months of hacking, I’ve established a 4-step workflow that is repeatable and structured.</p>
+
+<h3>Phase 1: Active Reconnaissance & Port Scanning</h3>
+<p>First, run a comprehensive port scan to find entry points. I always start with an Nmap service scan to discover services and their versions:</p>
+<pre><code>nmap -sV -sC -T4 -oN nmap_report.txt [TARGET_IP]</code></pre>
+
+<h3>Phase 2: Web & Directory Enumeration</h3>
+<p>If port 80 or 443 is open, search for hidden directories using Gobuster or GoBuster. Finding login panels or backup files (.zip, .bak) is often the key to initial access:</p>
+<pre><code>gobuster dir -u http://[TARGET_IP] -w /usr/share/wordlists/dirb/common.txt</code></pre>
+
+<h3>Phase 3: Initial Exploitation</h3>
+<p>Look up public exploits for the service versions found in Phase 1 (using Searchsploit or Exploit-DB). If it’s a custom web app, manually test for forms vulnerable to command injection or file uploads.</p>
+
+<h3>Phase 4: Privilege Escalation</h3>
+<p>Once inside with a low-privilege shell, run automated tools like <strong>LinPEAS</strong> to scan for SUID binaries, exposed cron jobs, or kernel exploits. Understanding system administration and operating system fundamentals is critical here.</p>
+    `
+  },
   {
     title: "Building an AI Assistant with Semantic Memory",
     slug: "building-ai-assistant-semantic-memory",
@@ -15,6 +77,7 @@ export const blogPosts: BlogPost[] = [
       "How I built FRIDAY's memory architecture using vector embeddings, local RAG, and semantic search for persistent context across sessions.",
     date: "2026-04-15",
     readTime: "8 min",
+    tag: "AI/Engineering",
     content: `
 <p>Autonomous AI agents are incredibly capable, but they suffer from one fundamental limitation: they are stateless. When a session ends, all context, user preferences, and learnings are lost. To solve this in <strong>FRIDAY</strong>, I designed a multi-tiered semantic memory architecture using vector embeddings and local retrieval.</p>
 
@@ -53,6 +116,7 @@ interface MemoryRecord {
       "Benchmarking latency and throughput between Groq's LPU and Cerebras's Wafer-Scale Engine for LLM inference.",
     date: "2026-03-28",
     readTime: "10 min",
+    tag: "AI/Engineering",
     content: `
 <p>For real-time multi-agent applications, response latency is critical. A delay of 5 seconds for a tool call can stall an entire pipeline. This led me to benchmark the two leading high-speed inference engines: <strong>Groq's LPU (Language Processing Unit)</strong> and <strong>Cerebras's Wafer-Scale Engine (WSE)</strong>.</p>
 
@@ -103,6 +167,7 @@ interface MemoryRecord {
       "A practical guide to containerizing multi-agent AI systems with Docker, ensuring isolation, scalability, and reproducible deployments.",
     date: "2026-03-10",
     readTime: "7 min",
+    tag: "AI/Engineering",
     content: `
 <p>Giving an AI agent the ability to execute code and run commands on your machine is incredibly powerful—but it is also a massive security risk. Without strict isolation, a buggy script or a malicious prompt could delete files or leak environment variables. Here is how I set up secure sandboxes for autonomous agents using Docker.</p>
 
@@ -132,71 +197,13 @@ WORKDIR /home/agent
     `
   },
   {
-    title: "Web Vulnerability Scanning with Python",
-    slug: "web-vulnerability-scanning-python",
-    excerpt:
-      "Building a modular vulnerability scanner in Python — from crawlers and fingerprinting to SQL injection detection and report generation.",
-    date: "2026-02-20",
-    readTime: "12 min",
-    content: `
-<p>To understand web security, you have to learn how automated scanners work. I built <strong>VulnScanner</strong>, a modular vulnerability scanner in Python, to run penetration testing experiments on local labs. Here is a breakdown of how the scanner is architected.</p>
-
-<h3>Core Scanner Architecture</h3>
-<p>The scanner consists of a master orchestrator and five specialized detection modules:</p>
-<ol>
-  <li><strong>Crawler Module:</strong> Recursively maps all links, forms, and API endpoints using BeautifulSoup.</li>
-  <li><strong>Header Analyzer:</strong> Checks security headers (CORS, CSP, X-Frame-Options, HSTS).</li>
-  <li><strong>SQLi Scanner:</strong> Injects basic boolean-based and time-based SQL payloads into input forms.</li>
-  <li><strong>XSS Detection:</strong> Tests input validation by injecting HTML elements and monitoring reflecting inputs.</li>
-  <li><strong>Reporter:</strong> Compiles a structured markdown document detailing findings and risk severity.</li>
-</ol>
-
-<pre><code># Sample code snippet from the SQLi detection module
-def check_sqli(url, parameter):
-    payloads = ["'", "''", " OR 1=1", "' OR '1'='1"]
-    for payload in payloads:
-        target = f"{url}?{parameter}={payload}"
-        response = requests.get(target)
-        if "sql syntax" in response.text.lower() or "mysql" in response.text.lower():
-            return True
-    return False
-</code></pre>
-
-<p>This project taught me the importance of input validation, sanitized database queries (prepared statements), and the utility of automated testing tools in modern secure development pipelines.</p>
-    `
-  },
-  {
-    title: "My TryHackMe Workflow for CTF Challenges",
-    slug: "tryhackme-workflow-ctf",
-    excerpt:
-      "The methodology, tools, and mindset I use to systematically solve TryHackMe rooms and capture flags efficiently.",
-    date: "2026-02-05",
-    readTime: "6 min",
-    content: `
-<p>Capture The Flag (CTF) challenges on platforms like TryHackMe are brilliant for developing security instincts. However, randomly trying payloads without a clear methodology is a recipe for frustration. Over months of hacking, I’ve established a 4-step workflow that is repeatable and structured.</p>
-
-<h3>Phase 1: Active Reconnaissance & Port Scanning</h3>
-<p>First, run a comprehensive port scan to find entry points. I always start with an Nmap service scan to discover services and their versions:</p>
-<pre><code>nmap -sV -sC -T4 -oN nmap_report.txt [TARGET_IP]</code></pre>
-
-<h3>Phase 2: Web & Directory Enumeration</h3>
-<p>If port 80 or 443 is open, search for hidden directories using Gobuster or GoBuster. Finding login panels or backup files (.zip, .bak) is often the key to initial access:</p>
-<pre><code>gobuster dir -u http://[TARGET_IP] -w /usr/share/wordlists/dirb/common.txt</code></pre>
-
-<h3>Phase 3: Initial Exploitation</h3>
-<p>Look up public exploits for the service versions found in Phase 1 (using Searchsploit or Exploit-DB). If it’s a custom web app, manually test for forms vulnerable to command injection or file uploads.</p>
-
-<h3>Phase 4: Privilege Escalation</h3>
-<p>Once inside with a low-privilege shell, run automated tools like <strong>LinPEAS</strong> to scan for SUID binaries, exposed cron jobs, or kernel exploits. Understanding system administration and operating system fundamentals is critical here.</p>
-    `
-  },
-  {
     title: "RAG Architecture: A Practical Explanation",
     slug: "rag-architecture-explained",
     excerpt:
       "Breaking down Retrieval-Augmented Generation — from document chunking and embedding to vector search and LLM context injection.",
     date: "2026-01-18",
     readTime: "9 min",
+    tag: "AI/Engineering",
     content: `
 <p>Retrieval-Augmented Generation (RAG) is the industry standard for feeding private knowledge to large language models. It provides context without the high cost of fine-tuning. But how does it work under the hood? Let's trace a document through the entire RAG pipeline.</p>
 

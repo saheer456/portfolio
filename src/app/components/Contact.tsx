@@ -11,7 +11,7 @@ export default function Contact() {
             <div className="eyebrow justify-center">Contact</div>
             <h2 className="section-title text-center">Let&apos;s work together.</h2>
             <p className="text-[#8a8a8a] mt-4 leading-relaxed">
-              Open to SOC Analyst L1 roles, security internships, freelance projects, or just a good conversation about cybersecurity. Based in Bangalore, India.
+              Open to SOC Analyst L1 roles, security internships, freelance projects, or just a good conversation about cybersecurity. Based in Kerala, India · open to Bengaluru, Kochi and across India.
             </p>
           </div>
         </ScrollReveal>

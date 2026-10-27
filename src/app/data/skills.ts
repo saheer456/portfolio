@@ -10,6 +10,7 @@ export const skillCategories: SkillCategory[] = [
     icon: "fa-shield-halved",
     skills: [
       { name: "Wazuh SIEM" },
+      { name: "Splunk (SPL)" },
       { name: "Log Analysis" },
       { name: "Alert Triage" },
       { name: "Endpoint Monitoring" },
